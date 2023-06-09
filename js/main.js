@@ -47,10 +47,8 @@ Al mismo <li> debemos agregarle la imagen y el tipo de Pokemon. Para esto repita
 function crearHTMLPokemon(pokemon) {
   let nombrePokemon = (document.createElement)('h3');
   nombrePokemon.innerText = pokemon.nombre;
-console.log ("yuju")
   let imagenPokemon = document.createElement('img');
   imagenPokemon.src = pokemon.img;
-  console.log ("yuju")
   let tipoPokemon = document.createElement('p');
   tipoPokemon.innerText = pokemon.tipo;
   console.log ("yuju")
@@ -76,6 +74,5 @@ pokemons.forEach(function(pokemon) {
     //Escribir aquí la línea de código faltante
   let pokemonListItem = crearHTMLPokemon(pokemon);
   listaPokemons.appendChild(pokemonListItem);
-
 }
 );
